@@ -108,7 +108,7 @@
         #title th {
             padding-top: 12px;
             padding-bottom: 12px;
-            text-align: left;
+            text-align: Center;
             background-color: #4661b9;
             color: white;
         }
@@ -122,7 +122,21 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 110%;
             
-        }   
+        }  
+        .show{
+            display: block;
+        } 
+
+   
+
+        .hide{
+
+            display: none;
+        }
+
+       
+
+       
      
         @media only screen and (max-width: 500px) {
             #title{
@@ -131,6 +145,25 @@
 }
         
     </style>
+
+    <script>
+
+        
+
+        displayAssignment = () =>{
+
+            document.getElementById('Topics').classList.add('hide');
+            document.getElementById('assignment').classList.toggle('hide');
+        }
+
+
+
+        displayTopics = () =>{
+        document.getElementById('assignment').classList.add('hide');
+        document.getElementById('Topics').classList.toggle('hide');
+    }
+    </script>
+
 </head>
 
 <body>
@@ -143,128 +176,139 @@
   
   
   
-  
-   <div class="box1" style='padding-top: 20px;'>
-   <a href="58edcf3f-8eb4-4f36-ab7f-b9623ac87d73.jpg" target="_blank">Timetable</a>
+     <div class="box1" style='padding-top: 20px;'>
+   <a href="#" onclick="displayTopics()">Topics</a>
    <a href="https://drive.google.com/drive/folders/17JXWJmWmzP7jSuIaNdUtJjCgWjmpf_A9?usp=sharing" target="_blank">Course Material</a>
-   <a href="https://forms.gle/qP6KQPd4dazgGCpQ7" target="_blank">Suggestion / Ideas</a></div>
+   <a href="#"  onclick="displayAssignment()">Assignments </a>
+    </div>
    <br>
+      
    
-    <div class="box">
+    <div class="box hide" id="assignment">
         <table id="title">
             <tr>
-                <th>Subject </th>
-                <th> ID / Pass </th>
-                <th> Join </th>
+                <th> Subject </th>
+                <th> Assignment Description / Detail</th>
+                
+               
             </tr>
  
            
              <tr>
-                <td>O O P</td>
-                <td>Visit YT channel</td>
-                <td><a href="https://www.youtube.com/channel/UC0zVUfltHR24ZuAVG97PTUg">Youtube</a></td>
-            </tr>
-       
-       
-                  
+                <td><strong>Mobile Application Development </strong> <br>
+                    Last Date: dd/mm/yy</td>
+                <td><p>this is the description of the Assignment </p></td>
+            </tr> 
             <tr>
-                <td>Principles of Management</td>
-                <td><strong>ID: </strong>92040422533 <br><strong>Pass: </strong>SW-PM</td>
-                <td><a href="https://zoom.us/j/92040422533?pwd=TFdTd1JTWlluRUd6Q0puM1FhaTFQUT09" target="_blank">Join</a> </td>
+                <td><strong>Multimedia Systems And Design </strong> <br>
+                    Last Date: dd/mm/yy</td>
+                <td><p>this is the description of the Assignment </p></td>
+            </tr>
+
+            <tr>
+                <td><strong>Software Project Management </strong> <br>
+                    Last Date: dd/mm/yy</td>
+                <td><p>this is the description of the Assignment </p></td>
+            </tr>
+            <tr>
+                <td><strong>Software Design and Architecture </strong> <br>
+                    Last Date: dd/mm/yy</td>
+                <td><p>this is the description of the Assignment </p></td>
+            </tr>
+            <tr>
+                <td><strong>Data Science </strong> <br>
+                    Last Date: dd/mm/yy</td>
+                <td><p>this is the description of the Assignment </p></td>
             </tr>
             
-            <tr>
-                <td>Probability and Statistics</td>
-                <td><strong>ID: </strong>93697016201 <br><strong>Pass: </strong>870tpY</td>
-                <td><a  href="https://zoom.us/j/93697016201?pwd=WFE5M1h2eWg2TmVaQzA0UXhxNitkZz09" target="_blank">Join</a></td>
-            </tr>  
-                
-              <tr>
-                <td>Digital Logic Design</td>
-                <td><strong>ID: </strong>86397735771<br><strong>Pass: </strong>wi51S3</td>
-                     <td> <!-- <a href="https://us02web.zoom.us/j/89319128314?pwd=dmhiWWQ0NVhqRlhkbTRZVUdUcHlKZz09" target="_blank" >join</a>-->   </td>
-            </tr>     
-               
            
         </table>
-    </div>
+    </div> 
     
+    <div class="box " id="Topics">
+        <table id="title">
+            <tr>
+                <th> Subject </th>
+                <th> Topics Covered </th>
+            </tr>
+ 
+           <!--Subject 1  -->
+             <tr>
+                <td><strong>Mobile Application Development</strong></td>
+                <td>
+                    <p>
+                        <ul type="circle" style=" margin-left:5%">
+                            <li>Introduction</li>
+                            <li>------------</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>  
+            <!--Subject 2 -->
+            <tr>
+                <td><strong>Multimedia Systems And Design </strong></td>
+                <td>
+                    <p>
+                        <ul type="circle" style=" margin-left:5%">
+                            <li>Introduction</li>
+                            <li>------------</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>  
+              <!--Subject 3 -->
+              <tr>
+                <td><strong>Software Project Management </strong></td>
+                <td>
+                    <p>
+                        <ul type="circle" style=" margin-left:5%">
+                            <li>Introduction</li>
+                            <li>------------</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>  
+          <!--Subject 4 -->
+          <tr>
+            <td><strong>Software Design and Architecture  </strong></td>
+            <td>
+                <p>
+                    <ul type="circle" style=" margin-left:5%">
+                        <li>Introduction</li>
+                        <li>------------</li>
+                    </ul>
+                </p>
+            </td>
+        </tr>  
+         <!--Subject 5 -->
+                  <tr>
+                    <td><strong>Data Science </strong></td>
+                    <td>
+                        <p>
+                            <ul type="circle" style=" margin-left:5%">
+                                <li>Introduction</li>
+                                <li>------------</li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>  
+        
+    
+        
+        </table>
+    </div>
 
-    <div class="box1" style='padding-top: 20px; filter:grayscale(100%); '>
+
+
+
+
+ <!--  <div class="box1" style='padding-top: 20px; filter:grayscale(100%); '>
    <a href="#" style="cursor: not-allowed; ">English Assignment</a>
    </div> <br>
      <p style="text-align:center;"><strong> Anyone who's Assignment is not submitted earlier || can submit now at the time of paper <strong><p>  
-   <div class="box1">
-      
-       <p style="text-align:center;"><strong>Assignment 01</strong> <br><br>
-        <strong> Instructions:</strong><br>
-<strong>Marks:</strong> 05 <br><br>
-Write a report of 500 words minimum on "Opinion about Harassments in Pakistan".<br>
-U can ask the opinion from your classmates, your colleagues and sibling.<br>
-Use reports verbs, to express their opinion in your note. <br>
-<br><br>
- <br><br>
-       
-<strong><br>Assignment 02</strong> <br>
-<strong>Instructions:</strong><br><br>
-<strong>Marks:</strong> 05 <br><br>
-Write a note of 500 words minimum on "Suggestion to stop harassments on Workplace".<br>
-Write down the note with comprehensive research.<br>
-Use Modal Verbs (can, may, might should etc.) , to express their opinion in your note. <br>
-<br><br>
  
- <br><br>
-              
-<strong>Assignment 03</strong><br>
-<strong>Instructions:</strong><br>
-<strong>Marks:</strong> 10 <br><br>
- <br>
-A sample of precis. <br><br>
-http://www.perfectyourenglish.com/grammar/precis-writing-examples.htm
-<br> Write a precise of the following paragraph.(Provided in link) <br> <br>
-               
- <br> <br></p>
-   </div> 
-       
-  
-       
-     <div class="box1" style='padding-top: 20px; filter:grayscale(100%); '>
-   <a href="#" style="cursor: not-allowed; ">Discrete Structure Assignment</a>
-   </div> <br>
-   <div class="box1">
-      
-     <p style="text-align: center;"><strong>Exercise: </strong>1.1 <br> <strong>problems: </strong> 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12,  30, 31, 32, 33, 34, 35, 36, 37, 38, 39, , 43, 44
-       <br><br>
-       <strong>Example: </strong> 6 , 7 , 8  <strong>Page No: </strong> 30
-        <br><br>
-          
-            <strong>Exercise :</strong>1.4 <br> <strong>problems: </strong> 1, 2, 3, 11, 12
-            <br><br>
-           
-            <strong>Exercise :</strong>1.6 <br> <strong>problems: </strong> 1, 2, 3
-            <br><br>  
-            
-             <strong>Exercise :</strong>1.7 <br> <strong>problems: </strong> 1, 2, 5
-            <br><br>
-            
-            <strong>Exercise :</strong>2.3 <br> <strong>problems: </strong> 8, 9
-            <br><br>
-            
-            <strong>Exercise :</strong>2.4 <br> <strong>problems: </strong> 1, 2
-            <br><br>
-            
-            <strong>Exercise :</strong>2.6 <br> <strong>problems: </strong> 1, 2 ,3
-            <br><br>
-       
-            <strong>Exercise :</strong>4.6 <br> <strong>problems: </strong> 1, 4
-            <br><br>
-              
-            <strong>Exercise :</strong>6.1 <br> <strong>problems: </strong> 1, 2, 3, 6, 7, 8, 9, 10
-            <br><br>
-         
-           </p>
-   </div>
-   
+  -->
+
 
 
 </body>
