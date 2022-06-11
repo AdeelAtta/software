@@ -14,6 +14,18 @@
             box-sizing:border-box;
 
         }
+        summary span{
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        summary> strong{
+            font-weight: bolder;
+            color: #4661b9;
+            opacity: 1 !important;
+
+
+        }
         
         
         
@@ -187,39 +199,64 @@
     <div class="box hide" id="assignment">
         <table id="title">
             <tr>
-                <th> Subject </th>
-                <th> Assignment Description / Detail</th>
-                
-               
+                <th> Subject Assignments</th>
             </tr>
  
            
              <tr>
-                <td><strong>Mobile Application Development </strong> <br>
-                    Last Date: dd/mm/yy</td>
-                <td><p>this is the description of the Assignment </p></td>
+                <td>
+                    <details>
+                        <summary><strong>Mobile Application Development</strong>  </summary>
+                        <hr>
+                        <p>this is the description of the Assignment </p>
+                    </details> 
+                </td>  
             </tr> 
-            <tr>
-                <td><strong>Multimedia Systems And Design </strong> <br>
-                    Last Date: dd/mm/yy</td>
-                <td><p>this is the description of the Assignment </p></td>
-            </tr>
+
 
             <tr>
-                <td><strong>Software Project Management </strong> <br>
-                    Last Date: dd/mm/yy</td>
-                <td><p>this is the description of the Assignment </p></td>
-            </tr>
+                <td>
+                    <details>
+                        <summary><strong>Multimedia Systems And Design</strong> </summary>
+                        <hr>
+                        <p>this is the description of the Assignment </p>
+                    </details> 
+                </td>  
+            </tr> 
+
+
+
             <tr>
-                <td><strong>Software Design and Architecture </strong> <br>
-                    Last Date: dd/mm/yy</td>
-                <td><p>this is the description of the Assignment </p></td>
-            </tr>
+                <td>
+                    <details>
+                        <summary><strong>Software Project Management </strong>  </summary>
+                        <hr>
+                        <p>this is the description of the Assignment </p>
+                    </details> 
+                </td>  
+            </tr> 
+
+
             <tr>
-                <td><strong>Data Science </strong> <br>
-                    Last Date: dd/mm/yy</td>
-                <td><p>this is the description of the Assignment </p></td>
-            </tr>
+                <td>
+                    <details>
+                        <summary><strong>Software Design and Architecture</strong>  </summary>
+                        <hr>
+                        <p>this is the description of the Assignment </p>
+                    </details> 
+                </td>  
+            </tr> 
+
+                <tr></tr>
+            <tr>
+                <td>
+                    <details>
+                        <summary><strong>Data Science </strong>  </summary>
+                        <hr>
+                        <p>this is the description of the Assignment </p>
+                    </details> 
+                </td>  
+            </tr> 
             
            
         </table>
